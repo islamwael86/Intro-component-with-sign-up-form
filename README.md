@@ -33,6 +33,7 @@ Users should be able to:
 
 - HTML
 - CSS
+- SCSS
 - JavaScript
 
 ## Author
