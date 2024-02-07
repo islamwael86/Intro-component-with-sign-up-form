@@ -14,24 +14,26 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
-  <section class="left">
-    <h1>Learn to code by watching others</h1>
-    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-      but understanding how developers think is invaluable. </p>
-  </section>
-  <section class="right">
-    <h2> <div><span class="span">Try it free 7 days</span><span>then <br>$20/mo. thereafter</span> </div> </h2>
-    <div class="form">
-      <form action="">
-        <input name="first" type="text" placeholder="First Name">
-        <input name="last" type="text" placeholder="Last Name">
-        <input name="mail" type="text" placeholder="Email Address"> 
-        <input name="pass" type="password" placeholder="Password"> 
-        <input name="sub" type="submit" value="Claim your free trial">
-      </form>
-      <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-    </div>
-  </section>
+  <main>
+    <section class="left">
+      <h1>Learn to code by watching others</h1>
+      <p class="paragraph">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+    </section>
+    <section class="right">
+      <div class="header"><div><span class="span">Try it free 7 days</span><span>then <br>$20/mo. thereafter</span></div></div>
+      <div class="form">
+        <form>
+          <input class="st" name="first" type="text" placeholder="First Name">
+          <input class="nd" name="last" type="text" placeholder="Last Name">
+          <input class="email" name="mail" type="text" placeholder="Email Address"> 
+          <input class="password" name="pass" type="password" placeholder="Password"> 
+          <input name="sub" type="submit" value="Claim your free trial">
+        </form>
+        <p class="footer">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+      </div>
+    </section>
+  </main>
   <script src="./index.js"></script>
 </body>
 </html>
