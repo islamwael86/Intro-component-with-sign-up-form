@@ -23,7 +23,6 @@ let image2 = document.createElement("img");
 let image3 = document.createElement("img");
 let image4 = document.createElement("img");
 
-
 document.forms[0].onsubmit = function (e) {
     let firstName = false;
     let lastName = false;
@@ -38,7 +37,10 @@ document.forms[0].onsubmit = function (e) {
         lastName = true;
     }
 
-    if (mail = /\w@\w\.\w/ig) {
+    let code = /\w+@\w+\.\w+/ig;
+    let valid = code.test(mail.value);
+
+    if (valid === true) {
         email = true;
     }
 
@@ -48,7 +50,7 @@ document.forms[0].onsubmit = function (e) {
 
     if (firstName === false) {
         paragragh1.appendChild(text1);
-        paragragh1.style.cssText = "font-style: italic; color: hsl(0, 100%, 74%); width: 375px; height: 10px; padding: 0; margin: 0; display: flex; justify-content: end; margin-top: -20px; margin-right: -20px;";
+        paragragh1.style.cssText = "font-size:11px; font-style: italic; color: hsl(0, 100%, 74%); width: 375px; height: 10px; padding: 0; margin: 0; display: flex; justify-content: end; margin-top: -20px; margin-right: -20px;";
         first.style.cssText = "border:2px solid hsla(0, 100%, 74%);";
         first.setAttribute("placeholder", "");
         first.after(paragragh1);
@@ -62,7 +64,7 @@ document.forms[0].onsubmit = function (e) {
 
     if (lastName === false) {
         paragragh2.appendChild(text2);
-        paragragh2.style.cssText = "font-style: italic; color: hsl(0, 100%, 74%); width: 375px; height: 10px; padding: 0; margin: 0; display: flex; justify-content: end; margin-top: -20px; margin-right: -20px;";
+        paragragh2.style.cssText = "font-size:11px; font-style: italic; color: hsl(0, 100%, 74%); width: 375px; height: 10px; padding: 0; margin: 0; display: flex; justify-content: end; margin-top: -20px; margin-right: -20px;";
         last.style.cssText = "border:2px solid hsla(0, 100%, 74%);";
         last.setAttribute("placeholder", "");
         last.after(paragragh2);
@@ -76,7 +78,7 @@ document.forms[0].onsubmit = function (e) {
 
     if (email === false) {
         paragragh3.appendChild(text3);
-        paragragh3.style.cssText = "font-style: italic; color: hsl(0, 100%, 74%); width: 375px; height: 10px; padding: 0; margin: 0; display: flex; justify-content: end; margin-top: -20px; margin-right: -20px;";
+        paragragh3.style.cssText = "font-size:11px; font-style: italic; color: hsl(0, 100%, 74%); width: 375px; height: 10px; padding: 0; margin: 0; display: flex; justify-content: end; margin-top: -20px; margin-right: -20px;";
         mail.style.cssText = "color: hsl(0, 100%, 74%); border:2px solid hsla(0, 100%, 74%);";
         mail.setAttribute("placeholder", "");
         mail.after(paragragh3);
@@ -90,7 +92,7 @@ document.forms[0].onsubmit = function (e) {
 
     if (password === false) {
         paragragh4.appendChild(text4);
-        paragragh4.style.cssText = "font-style: italic; color: hsl(0, 100%, 74%); width: 375px; height: 10px; padding: 0; margin: 0; display: flex; justify-content: end; margin-top: -20px; margin-right: -20px;";
+        paragragh4.style.cssText = "font-size:11px; font-style: italic; color: hsl(0, 100%, 74%); width: 375px; height: 10px; padding: 0; margin: 0; display: flex; justify-content: end; margin-top: -20px; margin-right: -20px;";
         pass.style.cssText = "border:2px solid hsla(0, 100%, 74%);";
         pass.setAttribute("placeholder", "");
         pass.after(paragragh4);
@@ -103,5 +105,4 @@ document.forms[0].onsubmit = function (e) {
     }
 
     submit.style.cssText = "background-color: hsla(154, 59%, 51%, 0.479); box-shadow: 0 3px 0 0 hsla(154, 66%, 43%, 0.600);";
-
 };

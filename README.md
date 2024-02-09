@@ -21,8 +21,7 @@ Users should be able to:
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 
 ### Screenshot
-
-[![Desktop.png](https://i.postimg.cc/GhGv975N/Desktop.png)](https://postimg.cc/RNCWDR9Q)
+[![Desktop.png](https://i.postimg.cc/3RH51YV3/Desktop.png)](https://postimg.cc/cKTb4ydz)
 [![Mobile.png](https://i.postimg.cc/NMhKhT6X/Mobile.png)](https://postimg.cc/p9ZWzm1V)
 
 ### Links
