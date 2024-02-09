@@ -27,6 +27,7 @@ main {
 h1 {
   font-size: 50px;
   font-weight: bold;
+  margin-top: -15px;
   margin-bottom: 10px;
   line-height: 1;
 }
@@ -46,7 +47,7 @@ h1 {
 
 .header {
   width: 450px;
-  height: 60px;
+  height: 58px;
   padding-right: 7px;
   padding-left: 7px;
   background-color: hsl(248, 32%, 49%);
@@ -71,7 +72,7 @@ h1 {
 form {
   background-color: white;
   width: 450px;
-  height: 60vh;
+  height: 53vh;
   padding-top: 20px;
   padding-right: 7px;
   padding-left: 7px;
@@ -86,7 +87,7 @@ form {
 
 input {
   width: 375px;
-  height: 60px;
+  height: 58px;
   padding: 0;
   margin-top: 20px;
   border-radius: 5px;
@@ -117,7 +118,8 @@ form input:last-child {
 .footer {
   color: hsl(246, 25%, 77%);
   font-size: 10px;
-  height: 40px;
+  height: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
   margin-top: 0;
   display: flex;
